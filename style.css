@@ -1,0 +1,68 @@
+body {
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+ul {
+    text-align: center;
+    color: white;
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+ol {
+    text-align: center;
+    color: white;
+    width: 30%;
+    margin: 0 auto;
+}
+
+div {
+    text-align: center;
+    color: white
+}
+
+h1 {
+    text-align: center;
+    color: white;
+} 
+
+p {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+
+a {
+    border: 1px solid;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  a:focus {
+    outline: 4px dotted #e73;
+    outline-offset: 4px;
+    background: #ffa;
+  }
+
+.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
