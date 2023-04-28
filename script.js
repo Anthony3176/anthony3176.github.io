@@ -1,11 +1,15 @@
 // Function that will be called under the scene switcher. 
 function switchToScene(sceneName) {
     fetch(`${sceneName}.html`)
-      .then(response => response.text())
+    // sceneName would be different html files within the directory (i.e about-me.html). It would automatically add .html at the end.  
+    .then(response => response.text())
       .then(html => {
         // Replace the current page content with the loaded scene HTML
         document.documentElement.innerHTML = html;
+        // Allows for use of back arrow. Saves last page into history. 
+        history.pushState({ scene: sceneName }, '', `?scene=${sceneName}`);
       })
+       // If an error occurs, throw an error. 
       .catch(error => {
         console.error(`Error loading scene: ${error}`);
       });
@@ -28,10 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (buttonText === 'About me!') {
           // From here, says it's switching and does the action after the click.
           console.log("Switching to the About scene...");
+          switchToScene('about-me')
         } else if (buttonText === 'My Qualities') {
           console.log("Switching to the Qualities scene...");
+          switchToScene('my-qualities')
         } else if (buttonText === 'How I spend my free time!') {
           console.log("Switching to the Free Time scene...");
+          switchToScene('free-time')
         }
       }
     });
