@@ -1,3 +1,5 @@
+// revamp below
+
 // Function that will be called under the scene switcher. 
 function switchToScene(sceneName) {
     fetch(`${sceneName}.html`)
@@ -43,8 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  
-
 
 
       
