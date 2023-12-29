@@ -5,33 +5,43 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href = 'style.css'/>
-        <script src="script.js"></script>
         <title>AntSume</title>
+
     </head>
     <body> 
-        <!--Main menu-->
-        <div class="navbar">
-            <div class="navbar-center">
-                <div class="navbar-item">
-                    <a href="https://www.freepnglogos.com/images/a-letter-logo-png-99.html">
-                         <img src="https://www.freepnglogos.com/uploads/a-letter-logo-png-4.png" alt="The letter A, my initial!" width="200px" /> </a>
-                </div>
-                
-                <div class= "menu-select"> 
-                    <button class="menu-item" id="aboutBtn">About me!</button>
-                    <button class="menu-item" id="qualitiesBtn">My Qualities</button>
-                    <button class="menu-item" if="freeBtn">How I spend my free time!</button>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="navbarContainer">
+                <a href="#home" id="navbar__logo">AntSume</a>
+
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
 
-                <div class="contact-me">
-                    <h2 class="contact-text">Contact Me!</h2>
-                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__links" id="home-page">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#qualities" class="navbar__links" id="home-page">My Qualities</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#freetime" class="navbar__links" id="home-page">Free Time</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#contact" class="button" id="contact-me">Contact Me!</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-       
-        <!-- about-me section /-->
+        </nav>
+        <script src="script.js"></script>
+        
+
+        <!-- about-me section -->
         <div class="about-me">
-            <h1 class="intro"> Hello! My name is Anthony Sanchez. I am a 17 year old who's dream is to become a software engineer in the future. I have been coding for several years, mostly in school.</h1>
+            <h1 class="intro"> Hello! My name is Anthony Sanchez. I am a 18 year old who's dream is to become a software engineer in the future. I have been coding for several years, mostly in school.</h1>
             <!--language experience-->
                 <h2 class="langEx"> I have experience with ...</h2>
                     <ol>
@@ -57,7 +67,7 @@
         
         <!--ending-->
         <div class="languages">
-            <h5 class="lang-explain">This website was made with html, css, and javascript.</h5>
+            <h5 class="lang-explain">This website was made with html and css.</h5>
         </div>
     </body>
 </html>
