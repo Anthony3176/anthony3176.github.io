@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/de5d638a79.js" crossorigin="anonymous"></script>
         <link type="text/css" rel="stylesheet" href = 'style.css'/>
         <title>AntSume</title>
 
@@ -22,52 +23,119 @@
 
                 <ul class="navbar__menu">
                     <li class="navbar__item">
-                        <a href="#about" class="navbar__links" id="home-page">About</a>
+                        <a href="#home" class="navbar__links" id="home-page">Home</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#qualities" class="navbar__links" id="home-page">My Qualities</a>
+                        <a href="#about" class="navbar__links" id="about-page">About Me</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#freetime" class="navbar__links" id="home-page">Free Time</a>
+                        <a href="#services" class="navbar__links" id="skills-page">My Skills</a>
                     </li>
                     <li class="navbar__btn">
-                        <a href="#contact" class="button" id="contact-me">Contact Me!</a>
+                        <a href="#contactMe" class="button" id="contact-page">Contact Me!</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <!--Hero-->
+        <div class="hero" id="home">
+            <div class="hero__container">
+                <h1 class="hero__heading">Welcome to <span>AntSume</span></h1>
+                <p class="hero__description">My Resume Website</p>
+                <button class="main__btn"><a href="#about">Explore</a></button>
+            </div>
+        </div>
+        
+        <!--about (change icon to pic of me)-->
+        <div class="main" id="about">
+            <div class="main__container">
+                <div class="main__img--container">
+                    <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+                </div>
+                <div class="main__content">
+                    <h1>Who am I?</h1>
+                    <h2>I am a senior in High School who wants to change the world.</h2>
+                    <p>My career goal is to become a software engineer.</p>
+                    <button class="main__btn"><a href="#">Contact me</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!--Services-->
+        <div class="services" id="services">
+            <h1>My Projects</h1>
+            <div class="services__wrapper">
+                <div class="services__card">
+                    <h2>Discord bot</h2>
+                    <p>A command driven discord bot</p>
+                    <button class="services__btn"><a href="https://github.com/Anthony3176/DiscordBot1">Check it out</a></button>
+                </div>
+                <div class="services__card">
+                    <h2>BAM AI Discord Bot</h2>
+                    <p>A discord bot powered by ChatGPT, made with Python.</p>
+                    <button class="services__btn"><a href="https://github.com/Anthony3176/bamAIDiscord">Check it out</a></button>
+                </div>
+                <div class="services__card">
+                    <h2>Website 1</h2>
+                    <p>A soccer website that uses OneFootball API</p>
+                    <button class="services__btn"><a href="https://github.com/Anthony3176/ONEFOOTBALLAPIWEB">Check it out</a></button>
+                </div>
+                <div class="services__card">
+                    <h2>Website 2</h2>
+                    <p>A website powered by NASA API </p>
+                    <button class="services__btn"><a href="https://github.com/Anthony3176/NASAAPIWEB">Check it out</a></button>
+                </div>
+            </div>
+            <button class="main__btn" target="_blank"><a href="https://github.com/Anthony3176">View my GitHub 
+                <i class="fab fa-github"></i> </a></button>
+        </div>
+
+        <!-- Features Section -->
+        <div class="main" id="contactMe">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>My Skills</h1>
+                    <h2>I can code in...</h2>
+                    <p>Java, JavaScript, Python, HTML, CSS, and soon more!</p>
+                    <p>I also have experience with working with the cloud and IT</p>
+                    <button class="main__btn"><a href="#">Contact Me</a></button>
+                </div>
+                <div class="main__img--container">
+                    <div class="main__img--card" id="card-2"><i class="fas fa-users"></i></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>More/Socials</h2>
+                        <a href="/sign-up">Linkedin</a> <a href="/sign-up">GitHub</a>
+                        <a href="/sign-up">Replit</a> <a href="/sign-up">placeholder</a>
+                    </div>
+                </div>
+            </div>
+            <Section class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo">AntSume</a>
+                    </div>
+                    <p class="website__lang">This website was made with html, css, and JavaScript.</p>
+                    <div class="social__icon">
+                        <a href="https://github.com/Anthony3176" class="social__icon--link" target="_blank"> 
+                            <i class="fab fa-github"></i
+                        ></a>
+                        <a href="https://www.linkedin.com/in/anthony-sanchez-9739a126a/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-linkedin"></i
+                        ></a>
+                    </div>
+                </div>
+            </Section>
+        </div>
+
         <script src="script.js"></script>
-        
-
-        <!-- about-me section -->
-        <div class="about-me">
-            <h1 class="intro"> Hello! My name is Anthony Sanchez. I am a 18 year old who's dream is to become a software engineer in the future. I have been coding for several years, mostly in school.</h1>
-            <!--language experience-->
-                <h2 class="langEx"> I have experience with ...</h2>
-                    <ol>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                    </ol>
-        </div>
-
-        
-        
-        <div class="socials">
-            <div class="social">
-                <a href="https://github.com/Anthony3176"> 
-                    <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png" alt="Link to my github profile, Anthony3176" width="50px"/> </a> 
-            </div>
-            <div class="social">
-                <a href="https://www.linkedin.com/in/anthony-sanchez-9739a126a/">
-                    <img src="https://icons-for-free.com/iconfiles/png/512/gray+linkedin+icon-1320168274961338134.png" alt="Link to my linkedIn Profile, Anthony Sanchez." width="50px"/> </a>
-            </div>
-        </div>
-        
-        <!--ending-->
-        <div class="languages">
-            <h5 class="lang-explain">This website was made with html and css.</h5>
-        </div>
     </body>
 </html>
